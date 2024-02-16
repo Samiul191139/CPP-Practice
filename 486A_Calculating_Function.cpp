@@ -1,14 +1,18 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 int main()
 {
-    int n,ans = 0;
+    long n;
+    int ans;
     cin >> n;
-    for (int i = 1; i <= n; i++)
+    if (n%2 == 0)
     {
-        ans += pow(-1, i)*i;
+        ans = n/2;
     }
-    cout << ans << endl;
+    else
+    {
+        ans = (n/2)-n;
+    }
+    cout << ans;
     return 0;
 }
