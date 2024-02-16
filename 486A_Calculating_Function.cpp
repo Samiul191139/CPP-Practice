@@ -2,8 +2,7 @@
 using namespace std;
 int main()
 {
-    long n;
-    int ans;
+    long long n, ans;
     cin >> n;
     if (n%2 == 0)
     {
